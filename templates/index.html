@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</head>
+
+<body>
+    <header class="is-size-0.5">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="/">
+                <img src="https://cdn.shopify.com/s/files/1/0249/3988/8733/files/The_Modern_Home_Bar_Logo_2_Cropped_360x.png?v=1556052310" width="112" height="28">
+              </a>
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item" href="/">
+                  Home
+                </a>
+          
+                <a class="navbar-item" href="/shelf">
+                  My shelf
+                </a>
+
+                <a class="navbar-item" href="/availables">
+                    Available cocktails
+                  </a>
+          
+                </div>
+              </div>
+              {% if username != None %}
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div style="margin:0 auto">                            
+                        <p>Hi {{username}}</p>
+                    </div>
+                  <div class="buttons">
+                    <a class="button is-primary is-rounded button is-small" href="/logout">
+                      <strong>Log out</strong>
+                    </a>
+                </div>
+            </div>
+          </div>
+        </nav>
+        {% else %}
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="buttons">
+                    <a class="button is-primary is-rounded button is-small" href="/register">
+                      <strong>Register</strong>
+                    </a>
+                    <a class="button is-light is-rounded button is-small" href="/login">
+                      Log in
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          {% endif %}
+    </header>
+    <section class="section level pb-1">
+        <h1 class="is-size-1 level-item has-text-centered padding">Welcome to the Home Bar system</h1>
+    </section>
+    <section class="level m-3">
+            <h2 class="is-size-3 level-item">One click away from the the fanciest cocktails!</h2>
+    </section>
+    <section class="level has-text-centered mx-1 pd-2">
+        <div class="m-3 mx-5">
+            Not sure what cocktail to make? Welcome to the Home Bar system 1.0, freshen up your drinking style in one click. On this website you can write the drinks you have at home and find out what fancy cocktails you can make with them. If you don't have a user yet, make sure to register first, lets start drinking.
+        </div>
+    </section>
+</body>
+
+</html>

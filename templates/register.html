@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Register</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    </head>
+<body>
+        <header class="is-size-0.5">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                  <a class="navbar-item" href="/">
+                    <img src="https://cdn.shopify.com/s/files/1/0249/3988/8733/files/The_Modern_Home_Bar_Logo_2_Cropped_360x.png?v=1556052310" width="112" height="28">
+                  </a>
+              
+                  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                  </a>
+                </div>
+              
+                <div id="navbarBasicExample" class="navbar-menu">
+                  <div class="navbar-start">
+                    <a class="navbar-item" href="/">
+                      Home
+                    </a>
+              
+                    <a class="navbar-item" href="/shelf">
+                      My shelf
+                    </a>
+    
+                    <a class="navbar-item" href="/availables">
+                        Available cocktails
+                      </a>
+              
+                    </div>
+                    </div>
+                  </div>
+                  <div class="navbar-end">
+                    <div class="navbar-item">
+                      <div class="buttons">
+                        <a class="button is-primary is-rounded button is-small">
+                          <strong>Register</strong>
+                        </a>
+                        <a class="button is-light is-rounded button is-small" href="/login">
+                          Log in
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>    
+        </header>
+
+        <section class="section level pb-1">
+            <h1 class="is-size-1 level-item has-text-centered padding">Registration page</h1>
+        </section>
+
+    <div id="registration">
+        <form id="register" method="POST" action="/register">
+            <section class="columns is-vcentered">
+                <section class="column is-one-quarter"></section>
+                <section class="column is-1">
+                    <label for="username">Username:</label>
+                </section>
+                <section class="column is-2">
+                    <input type="text" id="username" name="username">
+                </section>
+            </section>
+            <section class="columns is-vcentered">
+                <section class="column is-one-quarter"></section>
+                <section class="column is-1">
+                <label for="password">Password:</label>
+                </section>
+                <section class="column is-2">
+                <input type="password" id="password" name="password">
+                </section>
+            </section>
+            <section class="columns is-vcentered">
+                <section class="column is-one-quarter"></section>
+                <section class="column is-1">
+                <label for="name">Name:</label>
+                </section>
+                <section class="column is-2">
+                <input type="text" id="name" name="name">
+                </section>
+            </section>
+            <section class="columns is-vcentered">
+                <section class="column is-one-quarter"></section>
+                <section class="column is-1">
+                <label for="title">Email</label>
+                </section>
+                <section class="column is-2">
+                <input type="text" id="email" name="email">
+                </section>
+            </section>
+            <section class="columns is-vcentered">
+                <section class="column is-one-quarter"></section>
+                <section class="column is-1">
+                <label for="birthday">Birthday:</label>
+            </section>
+            <section class="column is-2">
+                <input type="text" id="birthday" name="birthday">
+            </section>
+        </section>
+        <div class="columns is-mobile is-centered">
+            <button tabindex="0">Submit</button>
+        </section>
+        </form>
+    </div>
+</body>
+</html>
